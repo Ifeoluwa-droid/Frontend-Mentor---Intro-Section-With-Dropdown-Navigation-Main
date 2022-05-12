@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-first-el">
+      <img id="logo" src="images/logo.svg" alt="">
+      <ul>
+        <li class="contains-dropdown link modal-1-link">
+          <div class="dropdown-link drop-link drop-link-1">
+            <div>Features</div>
+            <div><img class="dropdown-button drop-icon-1" src="images/icon-arrow-down.svg" alt=""></div>
+          </div>
+        </li>
+        <li class="contains-dropdown link modal-2-link">
+          <div class="dropdown-link drop-link drop-link-2">
+            <div>Company</div>
+            <div><img class="dropdown-button drop-icon-2" src="images/icon-arrow-down.svg" alt=""></div>
+          </div>
+        </li>
+        <li class="link">Careers</li>
+        <li class="link">About</li>
+      </ul>
+    </div>
+    <ul class="user-acct">
+      <li class="link">Login</li>
+      <li class="link">Register</li>
+    </ul>
+    <img class="menu-icon" src="images/icon-menu.svg" alt="">
+  </nav>
+  <div class="blanket">
+  </div>
+  <div class="overflow">
+    <img class="menu-close" src="images/icon-close-menu.svg" alt="">
+    <div class="drop-link drop-link-3"><div class="dropdown-link"><div>Features</div> <div><img class="dropdown-button drop-icon-3" src="images/icon-arrow-down.svg" alt=""></div></div>
+       <div class="inner-links display-none">
+         <div><div><img src="images/icon-todo.svg" alt=""></div><div>Todo List</div></div>
+         <div><div><img src="images/icon-calendar.svg" alt=""></div> <div>Calendar</div></div>
+         <div><div><img src="images/icon-reminders.svg" alt=""></div> <div>Reminders</div></div>
+         <div><div><img src="images/icon-planning.svg" alt=""></div> <div>Planning</div></div>
+       </div>
+    </div>
+    <div class="drop-link drop-link-4"><div class="dropdown-link"><div>Company</div> <div><img class="dropdown-button drop-icon-4" src="images/icon-arrow-down.svg" alt=""></div></div>
+      <div class="inner-links display-none">
+        <div>History</div>
+        <div>Our Team</div>
+        <div>Blog</div>
+      </div>
+    </div>
+    <div class="link">Careers</div>
+    <div class="link">About</div>
+  <div class="d-flex-col text-align-center">
+    <div class="link">Login</div>
+    <div class="link">Register</div>
+  </div>
+  </div>
+  <div class="modals">
+    <div class="modal modal1 display-none">
+      <div><img src="images/icon-todo.svg" alt=""> Todo List</div>
+      <div><img src="images/icon-calendar.svg" alt=""> Calendar</div>
+      <div><img src="images/icon-reminders.svg" alt=""> Reminders</div>
+      <div><img src="images/icon-planning.svg" alt=""> Planning</div>
+    </div>
+
+    <div class="modal modal2 display-none">
+      <div>History</div>
+      <div>Our Team</div>
+      <div>Blog</div>
+    </div>
+  </div>
+  <main>
+    <!-- Mobile image -->
+    <div class="mobile-image-container display-none">
+      <img class="mobile-image" src="images/image-hero-mobile.png" alt="">
+    </div>
+    <div class="later-inline brand-description">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <button>Learn more</button>
+      <div class="descr-footer">
+        <img src="images/client-databiz.svg" alt="">
+        <img src="images/client-audiophile.svg" alt="">
+        <img src="images/client-meet.svg" alt="">
+        <img src="images/client-maker.svg" alt="">
+      </div>
+    </div>
+    <div class="later-inline">
+      <img id="brand-image" src="images/image-hero-desktop.png" alt="">
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Faromika Ifeoluwa</a>.
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

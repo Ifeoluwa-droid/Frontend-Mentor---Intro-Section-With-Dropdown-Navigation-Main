@@ -1,0 +1,331 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+body {
+  padding: 20px;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+  font-family: 'Epilogue', sans-serif;
+  font-size: 18px
+}
+
+li, p {
+  color: hsl(0, 0%, 41%);
+}
+
+li div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+li {
+  cursor: pointer;
+}
+
+.link:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.inner-links {
+  position: relative;
+  left: 8%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.inner-links div {
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 80%;
+}
+
+p {
+  margin: 40px 0;
+  font-size: 1.5rem;
+  line-height: 1.5
+}
+
+button {
+  padding: 15px 25px;
+  background: hsl(0, 0%, 8%);
+  color: white;
+  border-radius: 15px;
+  font-size: 1.2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-first-el {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  /* justify-content: space-between; */
+}
+
+ul li {
+  margin: 0 20px;
+
+}
+
+.user-acct li:last-child, .d-flex-col div:last-child {
+  border: 2px solid hsl(0, 0%, 41%);
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+.user-acct li:last-child:hover {
+  border: 2px solid hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 8%);
+}
+
+.overflow {
+  padding: 8%;
+  background-color: #fff;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 30px;
+  margin-left: 100%;
+  width: 0;
+  display: none;
+  font-size: 16px;
+}
+
+.menu-close {
+  width: 32px;
+  position: relative;
+  left: 70%;
+}
+
+.blanket {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: hsl(0, 0%, 8%);
+  opacity: .7;
+  display: none;
+}
+
+.overflow div {
+  opacity: 1;
+  color: hsl(0, 0%, 41%);
+  transition: .5s;
+  cursor: pointer;
+}
+
+.overflow div:hover {
+  color: orange;
+}
+
+.dropdown-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.inner-links div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.d-flex-col div:last-child {
+  width: 60%;
+}
+
+.d-flex-col div:first-child {
+  transform: translate(-15%);
+}
+
+main {
+  display: flex;
+  padding: 60px 120px;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.brand-description {
+  width: 52%;
+  padding: 20px 0;
+  position: relative;
+}
+
+#brand-image {
+  width: 450px;
+}
+
+.descr-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.modal {
+  background-color: #fff;
+  font-size: 14px;
+  padding: 15px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  border-radius: 10px;
+  color: hsl(0, 0%, 41%);
+  box-shadow: -5px 5px 20px -3px hsl(0, 0%, 41%);
+}
+
+.modal div {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.modal div img {
+  margin: 0 10px;
+}
+
+.modal1 {
+  left: 120px;
+}
+
+.modal2 {
+  left: 300px;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.mobile-image-container {
+  width: 100%;
+  display: none;
+}
+
+.mobile-image {
+  width: 100%;
+}
+
+@media (max-width: 1522.40px) {
+  h1 {
+    font-size: 5.5rem;
+  }
+}
+@media (max-width: 1421.60px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .later-inline {
+    min-width: 500px;
+  }
+}
+
+@media (max-width: 660px) {
+  body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  nav {
+    padding: 20px;
+  }
+
+  nav ul {
+    display: none
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #logo {
+    width: 20vw;
+  }
+
+  .overflow {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 8vw;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 4vw;
+    width: 90%;
+    max-height: 150px;
+    margin: 0 auto 30px;
+  }
+
+  #brand-description {
+    padding-top: 0;
+  }
+
+  main {
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .mobile-image-container {
+    display: block;
+  }
+
+  #brand-image {
+    display: none;
+  }
+
+  .descr-footer {
+    position: relative;
+    top: 50px;
+    padding: 0 40px;
+  }
+}
